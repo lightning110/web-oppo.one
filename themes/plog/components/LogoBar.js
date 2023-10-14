@@ -18,7 +18,6 @@ export default function LogoBar(props) {
             {CONFIG.NAV_NOTION_ICON
               ? <LazyImage src={siteInfo?.icon} className='rounded-full' width={24} height={24} alt={BLOG.AUTHOR} />
               : <SvgIcon />}
-              <p>{siteInfo?.icon}</p>
         </div>
     </Link>
     {navBarTitle
