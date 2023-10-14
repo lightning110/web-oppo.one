@@ -17,7 +17,6 @@ export const Footer = (props) => {
        <div className="flex align-baseline justify-start flex-wrap space-x-6">
          <div> © {BLOG.AUTHOR} {copyrightDate}  </div>
          <div>Powered By <a href="https://github.com/tangly1024/NotionNext" className='underline'>NotionNext {BLOG.VERSION}</a></div>
-         <Vercel />
        </div>
      </div>
    </footer>
