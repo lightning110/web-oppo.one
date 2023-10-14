@@ -6,7 +6,7 @@ const CONFIG = {
   MENU_ARCHIVE: false, // 显示归档
   MENU_SEARCH: true, // 显示搜索
   MENU_RSS: false, // 显示订阅
-
+// v1.4
   NAV_NOTION_ICON: true, // 是否读取Notion图标作为站点头像
 
 }
