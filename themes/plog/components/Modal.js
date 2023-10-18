@@ -82,10 +82,10 @@ export default function Modal(props) {
                                 {/* 添加loading状态 */}
                                 {/* test */}
                                 <div className={`bg-hexo-black-gray w-32 h-32 flex justify-center items-center ${loading ? '' : 'hidden'}`}>
-                                <Link href={`${BLOG.SUB_PATH}/${modalContent.slug}`}>
+                                <a href={`${BLOG.SUB_PATH}/${modalContent.slug}`}>
 
                                     <ArrowPath className='w-10 h-10 animate-spin text-gray-200' />
-                                </Link>
+                                </a>
                                 </div>
 
                                 {/* 添加onLoad事件处理函数 */}
