@@ -85,7 +85,8 @@ export default function Modal(props) {
                                 </div>
 
                                 {/* 添加onLoad事件处理函数 */}
-                               <a href={`${BLOG.SUB_PATH}/${modalContent.slug}`}><LazyImage onLoad={handleImageLoad} src={img} ref={imgRef} style={{ display: loading ? 'none' : 'block' }} className={`w-full max-w-7xl max-h-[90vh] shadow-xl ${!loading ? ' animate__animated animate__fadeIn' : ''}`} /></a>
+                                <LazyImage onLoad={handleImageLoad} src={img} ref={imgRef} style={{ display: loading ? 'none' : 'block' }} className={`w-full max-w-7xl max-h-[90vh] shadow-xl ${!loading ? ' animate__animated animate__fadeIn' : ''}`} />
+
                                 {!loading && (<>
                                     <div className='absolute bottom-0 left-0 m-4 z-20'>
                                         <div className='flex'>
