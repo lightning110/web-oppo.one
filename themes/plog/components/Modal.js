@@ -85,8 +85,7 @@ export default function Modal(props) {
                                 </div>
 
                                 {/* 添加onLoad事件处理函数 */}
-                                <LazyImage onLoad={handleImageLoad} src={img} ref={imgRef} style={{ display: loading ? 'none' : 'block' }} className={`w-full max-w-7xl max-h-[90vh] shadow-xl ${!loading ? ' animate__animated animate__fadeIn' : ''}`} />
-
+                               <a href={`${BLOG.SUB_PATH}/${modalContent.slug}`}><LazyImage onLoad={handleImageLoad} src={img} ref={imgRef} style={{ display: loading ? 'none' : 'block' }} className={`w-full max-w-7xl max-h-[90vh] shadow-xl ${!loading ? ' animate__animated animate__fadeIn' : ''}`} /></a>
                                 {!loading && (<>
                                     <div className='absolute bottom-0 left-0 m-4 z-20'>
                                         <div className='flex'>
@@ -107,12 +106,12 @@ export default function Modal(props) {
                                             </div>
                                         )}
                                     </div>
-                                    <Link href={`${BLOG.SUB_PATH}/${modalContent.slug}`}>
+                                   
                                     <div className='z-10 absolute hover:opacity-50 opacity-0 duration-200 transition-opacity w-full top-0 left-0 px-4 h-full items-center flex justify-between'>
+                                        <div onClick={prev}><ChevronLeft className='cursor-pointer w-24 h-32 hover:opacity-100 stroke-white stroke-1 scale-y-150' /></div>
+                                        <div onClick={next}><ChevronRight className='cursor-pointer w-24 h-32 hover:opacity-100 stroke-white stroke-1 scale-y-150' /></div>
                                     </div>
-                                    </Link>
-                                    <div onClick={prev}><ChevronLeft className='cursor-pointer w-24 h-32 hover:opacity-100 stroke-white stroke-1 scale-y-150' /></div>
-                                    <div onClick={next}><ChevronRight className='cursor-pointer w-24 h-32 hover:opacity-100 stroke-white stroke-1 scale-y-150' /></div>
+
                                 </>)}
 
                             </Dialog.Panel>
