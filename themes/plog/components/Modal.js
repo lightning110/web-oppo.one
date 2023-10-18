@@ -80,7 +80,7 @@ export default function Modal(props) {
                         >
                             <Dialog.Panel className="relative transform overflow-hidden rounded-xl text-left shadow-xl transition-all ">
                                 {/* 添加loading状态 */}
-                                <Link href='${BLOG.SUB_PATH}/${modalContent.slug}'>
+                                <Link href={`${BLOG.SUB_PATH}/${modalContent.slug}`}>
 
                                 <div className={`bg-hexo-black-gray w-32 h-32 flex justify-center items-center ${loading ? '' : 'hidden'}`}>
                                     <ArrowPath className='w-10 h-10 animate-spin text-gray-200' />
