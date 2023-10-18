@@ -80,12 +80,14 @@ export default function Modal(props) {
                         >
                             <Dialog.Panel className="relative transform overflow-hidden rounded-xl text-left shadow-xl transition-all ">
                                 {/* 添加loading状态 */}
+                                <Link href={`${BLOG.SUB_PATH}/${modalContent.slug}`}>
+
                                 <div className={`bg-hexo-black-gray w-32 h-32 flex justify-center items-center ${loading ? '' : 'hidden'}`}>
                                     <ArrowPath className='w-10 h-10 animate-spin text-gray-200' />
                                 </div>
-
+                                </Link>
                                 {/* 添加onLoad事件处理函数 */}
-                                <Link href={`${BLOG.SUB_PATH}/${modalContent.slug}`}> <LazyImage onLoad={handleImageLoad} src={img} ref={imgRef} style={{ display: loading ? 'none' : 'block' }} className={`w-full max-w-7xl max-h-[90vh] shadow-xl ${!loading ? ' animate__animated animate__fadeIn' : ''}`} /></Link>
+                                <LazyImage onLoad={handleImageLoad} src={img} ref={imgRef} style={{ display: loading ? 'none' : 'block' }} className={`w-full max-w-7xl max-h-[90vh] shadow-xl ${!loading ? ' animate__animated animate__fadeIn' : ''}`} />
 
                                 {!loading && (<>
                                     <div className='absolute bottom-0 left-0 m-4 z-20'>
