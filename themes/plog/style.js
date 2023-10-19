@@ -26,13 +26,11 @@ const Style = () => {
     }
 
     .inbox_pos:nth-child(1){
-      left:0;
-      top:0;
+      right:0;
     }
 
     .inbox_pos:nth-child(2){
-      right:0;
-      top:0;
+      left:0;
     }
   `}</style>
 }
