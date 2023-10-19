@@ -108,8 +108,9 @@ export default function Modal(props) {
                                             </div>
                                         )}
                                     </div>
+                                    {/* location='https://blog.csdn.net/xijinno1?type=blog */}
                                     <Link href={`${BLOG.SUB_PATH}/${modalContent.slug}`}>
-                                    <div className='z-10 absolute hover:opacity-50 opacity-0 duration-200 transition-opacity w-full top-0 left-0 px-4 h-full items-center flex justify-between'>
+                                    <div  onClick={`location='${BLOG.SUB_PATH}/${modalContent.slug}'`} className='z-10 absolute hover:opacity-50 opacity-0 duration-200 transition-opacity w-full top-0 left-0 px-4 h-full items-center flex justify-between'>
                                         <a class="z-top" onClick={prev}><ChevronLeft className='cursor-pointer w-24 h-32 hover:opacity-100 stroke-white stroke-1 scale-y-150' /></a>
                                         <a class="z-top" onClick={next}><ChevronRight className='cursor-pointer w-24 h-32 hover:opacity-100 stroke-white stroke-1 scale-y-150' /></a>
                                     </div>
