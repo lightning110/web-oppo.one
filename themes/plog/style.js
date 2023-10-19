@@ -17,6 +17,10 @@ const Style = () => {
       height:100%;
     }
     
+    .inbox{
+      width:100%;
+      height:100%;
+    }
 
   `}</style>
 }
