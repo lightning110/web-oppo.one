@@ -12,8 +12,9 @@ const Style = () => {
     }
     
     // 层级
-    .z-top{
-      z-index:999;
+    .box{
+      width:100%;
+      height:100%;
     }
 
 

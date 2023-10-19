@@ -81,8 +81,6 @@ export default function Modal(props) {
                             <Dialog.Panel className="relative transform overflow-hidden rounded-xl text-left shadow-xl transition-all ">
                                 {/* 添加loading状态 */}
                                 {/* test */}
-
-                                
                                 <div className={`bg-hexo-black-gray w-32 h-32 flex justify-center items-center ${loading ? '' : 'hidden'}`}>                         
                                     <ArrowPath className='w-10 h-10 animate-spin text-gray-200' />
                                 </div>
@@ -111,6 +109,7 @@ export default function Modal(props) {
                                         )}
                                     </div>
                                     <div className='z-10 absolute hover:opacity-50 opacity-0 duration-200 transition-opacity w-full top-0 left-0 px-4 h-full items-center flex justify-between'>
+                                    <Link href={`${BLOG.SUB_PATH}/${modalContent.slug}`}><div class="box"></div></Link>
                                         <div onClick={prev}><ChevronLeft className='cursor-pointer w-24 h-32 hover:opacity-100 stroke-white stroke-1 scale-y-150' /></div>
                                         <div onClick={next}><ChevronRight className='cursor-pointer w-24 h-32 hover:opacity-100 stroke-white stroke-1 scale-y-150' /></div>
                                     </div>
