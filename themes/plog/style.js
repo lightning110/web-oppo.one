@@ -16,13 +16,26 @@ const Style = () => {
       width:100%;
       height:100%;
     }
+    .box:fist-child{
+      position:relative;
+    }
     
-    .inbox{
-      width:100%;
-      height:100%;
+    // 绝对定位
+    .inbox_pos{
+      position:absolute;
     }
 
+    .inbox_pos:nth-child(1){
+      left:0;
+      top:0;
+    }
+
+    .inbox_pos:nth-child(2){
+      right:0;
+      top:0;
+    }
   `}</style>
 }
 
 export { Style }
+
