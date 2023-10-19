@@ -30,7 +30,7 @@ const Style = () => {
     }
 
     .inbox_pos:nth-child(2){
-      left:0;
+      right:0;
     }
   `}</style>
 }
