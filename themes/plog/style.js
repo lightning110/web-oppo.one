@@ -23,19 +23,19 @@ const Style = () => {
     // 绝对定位
     .inbox_pos{
       position:absolute;
-      width:45px;
-      height:120px;
-      background-color:yellow;
+      // width:45px;
+      // height:120px;
+      // background-color:yellow;
     }
 
-    .inbox_pos .left{
+  .left{
       left:0;
-      background-color:yellow;
+      // background-color:yellow;
     }
 
-    .inbox_pos:nth-child(2){
+  .right{
       right:0;
-      background-color:red;
+      // background-color:red;
     }
   `}</style>
 }
