@@ -28,7 +28,7 @@ const Style = () => {
       background-color:yellow;
     }
 
-    .inbox_pos:fist-child{
+    .inbox_pos .left{
       left:0;
       background-color:yellow;
     }
