@@ -23,14 +23,17 @@ const Style = () => {
     // 绝对定位
     .inbox_pos{
       position:absolute;
+      width:45px;
+      height:120px;
     }
 
-    .inbox_left{
-      right:0;
-      background-color:blue;
+    .inbox_pos:nth-child(1){
+      left:0;
+      background-image:url("");
+      background-color:yellow;
     }
 
-    .inbox_right{
+    .inbox_pos:nth-child(2){
       right:0;
       background-color:red;
     }
