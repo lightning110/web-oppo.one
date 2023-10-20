@@ -110,8 +110,8 @@ export default function Modal(props) {
                                     <a class="box" href={`${BLOG.SUB_PATH}/${modalContent.slug}`}><div class="box"></div></a>
                                         {/* <div class="inbox_pos" onClick={prev}><ChevronLeft className='inbox_left cursor-pointer w-24 h-32 hover:opacity-100 stroke-white stroke-1 scale-y-150' /></div>
                                         <div class="inbox_pos" onClick={next}><ChevronRight className='inbox_right cursor-pointer w-24 h-32 hover:opacity-100 stroke-white stroke-1 scale-y-150' /></div> */}
-                                      {/* <div class="inbox_pos" onClick={prev}></div>
-                                      <div class="inbox_pos" onClick={next}></div> */}
+                                      <div class="inbox_pos" onClick={prev}></div>
+                                      <div class="inbox_pos" onClick={next}></div>
                                     </div>
      
                                 </>)}
