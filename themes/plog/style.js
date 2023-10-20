@@ -27,11 +27,13 @@ const Style = () => {
 
     .inbox_pos:nth-child(1){
       right:0;
+      background-color:blue;
     }
 
-    // .inbox_pos:nth-child(2){
-    //   right:0;
-    // }
+    .inbox_pos:nth-child(2){
+      right:0;
+      background-color:red;
+    }
   `}</style>
 }
 
