@@ -25,6 +25,7 @@ const Style = () => {
       position:absolute;
       width:45px;
       height:120px;
+      background-color:yellow;
     }
 
     .inbox_pos:fist-child{
