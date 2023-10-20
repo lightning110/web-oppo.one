@@ -27,9 +27,8 @@ const Style = () => {
       height:120px;
     }
 
-    .inbox_pos:nth-child(1){
+    .inbox_pos:fist-child{
       left:0;
-      background-image:url("");
       background-color:yellow;
     }
 
