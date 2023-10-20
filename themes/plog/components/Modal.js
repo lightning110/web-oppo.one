@@ -108,8 +108,8 @@ export default function Modal(props) {
                                     </div>
                                     <div className='z-10 absolute hover:opacity-50 opacity-0 duration-200 transition-opacity w-full top-0 left-0 px-4 h-full items-center flex justify-between'>
                                     <a class="box" href={`${BLOG.SUB_PATH}/${modalContent.slug}`}><div class="box"></div></a>
-                                        <div class="inbox_pos" onClick={prev}><ChevronLeft className='cursor-pointer w-24 h-32 hover:opacity-100 stroke-white stroke-1 scale-y-150' /></div>
-                                        <div class="inbox_pos" onClick={next}><ChevronRight className='cursor-pointer w-24 h-32 hover:opacity-100 stroke-white stroke-1 scale-y-150' /></div>
+                                        <div class="inbox_pos inbox_left" onClick={prev}><ChevronLeft className='cursor-pointer w-24 h-32 hover:opacity-100 stroke-white stroke-1 scale-y-150' /></div>
+                                        <div class="inbox_pos inbox_right" onClick={next}><ChevronRight className='cursor-pointer w-24 h-32 hover:opacity-100 stroke-white stroke-1 scale-y-150' /></div>
                                     </div>
      
                                 </>)}
