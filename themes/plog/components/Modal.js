@@ -97,17 +97,22 @@ export default function Modal(props) {
                                                 {modalContent?.summary}
                                             </div>
                                         </Link>
-
-                                        {modalContent?.category && (
+                                        {/* 标签语义 */}
+                                        {/* {modalContent?.category && (
                                             <div className='flex'>
                                                 <Link href={`/category/${modalContent?.category}`} className='text-xs rounded-lg mt-3 px-2 py-1 bg-black bg-opacity-20 text-white hover:bg-blue-700 hover:text-white duration-200'>
-                                                    {/* {modalContent?.category} */}
-                                                    {post?.tags.map(tag => (
-                                                      <TagItem key={tag} tag={tag} />
-                                                    ))}
+                                                    {modalContent?.category}
                                                 </Link>
                                             </div>
-                                        )}
+                                        )} */}
+
+                                        {post?.tags && (
+                                                      <div className="flex flex-nowrap max-w-full overflow-x-auto article-tags">
+                                                        {post?.tags.map(tag => (
+                                                          <TagItem key={tag} tag={tag} />
+                                                        ))}
+                                                      </div>
+                                                    )}
                                     </div>
                                     <div className='z-10 absolute hover:opacity-50 opacity-0 duration-200 transition-opacity w-full top-0 left-0 px-4 h-full items-center flex justify-between'>
                                     <a class="box" href={`${BLOG.SUB_PATH}/${modalContent.slug}`}><div class="box"></div></a>
