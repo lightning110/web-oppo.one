@@ -90,6 +90,8 @@ const Comment = ({ siteInfo, frontMatter, className }) => {
             </div>)}
 
             {BLOG.COMMENT_TWIKOO_ENV_ID && (<div key='Twikoo'>
+                <hr className="my-4 border-dashed" />
+                <div className="text-2xl dark:text-white"><i className="fas fa-comment mr-1"></i>畅所欲言</div>
                 <TwikooCompenent />
             </div>)}
 

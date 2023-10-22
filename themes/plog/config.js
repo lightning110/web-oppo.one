@@ -8,6 +8,7 @@ const CONFIG = {
   MENU_RSS: false, // 显示订阅
 // v1.4
   NAV_NOTION_ICON: true, // 是否读取Notion图标作为站点头像
+  USER_AVATER:'/avatar.svg',  //文章页面头像
 
 }
 export default CONFIG

@@ -3,6 +3,7 @@ import Image from 'next/image'
 import BLOG from '@/blog.config'
 import TagItem from './TagItem'
 import md5 from 'js-md5'
+import CONFIG from '../config'
 
 export const ArticleInfo = (props) => {
   const { post } = props
@@ -24,7 +25,8 @@ export const ArticleInfo = (props) => {
                   alt={BLOG.author}
                   width={24}
                   height={24}
-                  src={`https://gravatar.com/avatar/${emailHash}`}
+                  // src={`https://gravatar.com/avatar/${emailHash}`}
+                  src={CONFIG.USER_AVATER}
                   className="rounded-full"
                 />
                 <p className="ml-2 md:block">{BLOG.author}</p>
