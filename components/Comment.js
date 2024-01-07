@@ -98,6 +98,9 @@ const Comment = ({ siteInfo, frontMatter, className }) => {
                 </div>)}
 
                 {COMMENT_TWIKOO_ENV_ID && (<div key='Twikoo'>
+                  {/*  twikoo 组件样式 */}
+                  <hr className="my-5 border-dashed" />
+                  <div className="text-2xl dark:text-white"><i className="fas fa-comment mr-1"></i>畅所欲言</div>
                     <TwikooCompenent />
                 </div>)}
 
